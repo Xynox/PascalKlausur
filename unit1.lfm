@@ -1,0 +1,99 @@
+object Form1: TForm1
+  Left = 843
+  Height = 377
+  Top = 165
+  Width = 535
+  Caption = 'Form1'
+  ClientHeight = 377
+  ClientWidth = 535
+  OnCreate = FormCreate
+  LCLVersion = '2.0.10.0'
+  object Text_Stiefel: TLabel
+    Left = 38
+    Height = 15
+    Top = 36
+    Width = 76
+    Caption = 'Stiefel (39,99€)'
+    ParentColor = False
+  end
+  object Text_Skihosen: TLabel
+    Left = 169
+    Height = 15
+    Top = 36
+    Width = 91
+    Caption = 'Skihosen (15,99€)'
+    ParentColor = False
+  end
+  object Text_Maentel: TLabel
+    Left = 344
+    Height = 15
+    Top = 36
+    Width = 81
+    Caption = 'Mäntel (12,99€)'
+    ParentColor = False
+  end
+  object num_Stiefel: TEdit
+    Left = 38
+    Height = 23
+    Top = 72
+    Width = 76
+    TabOrder = 0
+    TextHint = 'Anzahl Stiefel'
+  end
+  object num_Hose: TEdit
+    Left = 169
+    Height = 23
+    Top = 72
+    Width = 91
+    TabOrder = 1
+    TextHint = 'Anzahl Skihosen'
+  end
+  object num_Maentel: TEdit
+    Left = 344
+    Height = 23
+    Top = 72
+    Width = 81
+    TabOrder = 2
+    TextHint = 'Anzahl Mäntel'
+  end
+  object sum_all_text: TLabel
+    Left = 66
+    Height = 15
+    Top = 236
+    Width = 106
+    Caption = 'Summe aller Waren:'
+    ParentColor = False
+  end
+  object sum_all: TLabel
+    Left = 200
+    Height = 1
+    Top = 236
+    Width = 1
+    ParentColor = False
+  end
+  object confirm: TButton
+    Left = 184
+    Height = 25
+    Top = 184
+    Width = 75
+    Caption = 'Bestätigen'
+    OnClick = confirmClick
+    TabOrder = 3
+  end
+  object add_cost: TLabel
+    Left = 296
+    Height = 15
+    Top = 236
+    Width = 224
+    Caption = '+ 5,95€ Versandkosten (bereits inbegriffen)'
+    ParentColor = False
+  end
+  object summ_all: TLabel
+    Left = 200
+    Height = 1
+    Top = 236
+    Width = 1
+    ParentColor = False
+    Visible = False
+  end
+end
